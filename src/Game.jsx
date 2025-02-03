@@ -40,7 +40,13 @@ const Game = () => {
     } else {
       setGamemessage("Oops, try again❌");
       setAnimationClass("wrong-text");
-    }
+      const newBoxColor = getRandomColor();
+      setTimeout(() => {
+        setBoxcolor(newBoxColor);
+        setOptions(generateColorOptions(newBoxColor));
+        setAnimationClass("");
+      }, 1000);
+}
     setTimeout(() => {
       setGamemessage("");
       setAnimationClass("");
