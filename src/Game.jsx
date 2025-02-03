@@ -70,6 +70,7 @@ const Game = () => {
           style={{ 
             background: color,
             marginLeft:"5px",
+            marginBottom:"5px"
            }}
           data-testid="colorOption"
         >
@@ -78,6 +79,8 @@ const Game = () => {
       ))}
       <p className={animationClass} data-testid="gameStatus">{gameMessage}</p>
       <p data-testid="score">{`Score: ${score}`}</p>
+
+      
       <button
         onClick={() => {
           const newBoxColor = getRandomColor();
@@ -90,6 +93,7 @@ const Game = () => {
       >
         New Game
       </button>
+
     </div>
   );
 };
