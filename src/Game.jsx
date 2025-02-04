@@ -67,7 +67,10 @@ const Game = () => {
          }}
         data-testid="colorbox"
       >
-        <p style={{margin: "auto", justifyContent:"center", padding: "20px"}}>What colour is this?</p>
+        <p style={{margin: "auto", 
+          justifyContent:"center",
+           padding: "20px", 
+           color: "white"}}>Guess This Colour</p>
       </div>
       {options.map((color, index) => (
         <button
