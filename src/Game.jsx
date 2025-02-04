@@ -89,7 +89,7 @@ const Game = () => {
         </button>
       ))}
       <p className={animationClass} data-testid="gameStatus">{gameMessage}</p>
-      <p data-testid="score">{`Score: ${score}`}</p>
+      <p data-testid="score" style={{color:"black"}}>{`Score: ${score}`}</p>
 
       
       <button
