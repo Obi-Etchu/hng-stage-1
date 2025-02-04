@@ -54,7 +54,7 @@ const Game = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2 data-testid="gameInstructions">Choose The Correct Color</h2>
       <div
         className="color-box"
@@ -76,11 +76,13 @@ const Game = () => {
           style={{ 
             background: color,
             marginLeft:"5px",
-            marginBottom:"5px"
+            marginBottom:"5px",
+            padding:"20px",
+            width:"15%"
            }}
           data-testid="colorOption"
         >
-          button
+          
         </button>
       ))}
       <p className={animationClass} data-testid="gameStatus">{gameMessage}</p>
@@ -94,6 +96,10 @@ const Game = () => {
           setOptions(generateColorOptions(newBoxColor));
           setScore(0);
           setGamemessage("");
+        }}
+        style={{
+          width:"100%",
+          backgroundColor: "skyblue"
         }}
         data-testid="newGameButton"
       >
