@@ -65,7 +65,7 @@ const Game = () => {
           alignItems:"center",
           marginBottom:"20px"
          }}
-        data-testid="colorbox"
+        data-testid="colorBox"
       >
         <p style={{margin: "auto", 
           justifyContent:"center",
